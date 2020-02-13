@@ -121,11 +121,6 @@ playGame(){
 		else
 			echo "player score is $playerOne "
 		fi
-	#checkWinner
-		if(( $playerOne==100 ))
-		then
-			echo "Win the player One with $count time Rolls the die "
-		fi
 	done
 }
 playGame
