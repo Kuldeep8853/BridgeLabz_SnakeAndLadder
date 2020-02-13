@@ -3,7 +3,7 @@
 Ladder(){
 	case $1 in
 	3)
-		ladder= 58
+		ladder=58
 		echo $ladder
 	;;
 	6)
@@ -47,8 +47,8 @@ Ladder(){
 
 Snake(){
 	case $1 in
-	27)
-		snake= 20
+	26)
+		snake=20
 		echo $snake
 	;;
 	35)
@@ -100,17 +100,19 @@ playGame(){
 		playerOne=$(( $playerOne+$play ))
 		#ladder
 			ladder1=$( Ladder $playerOne )
-			if(( $ladder1 > 0 ))
+			if(( $ladder1 >= 1 ))
 			then
+				echo "player score is $playerOne"
 				playerOne=$(( $playerOne+$ladder1 ))
-				echo "++> with help of ladder hike $ladder1 and player score is $playerOne"
+				echo "++> with help of ladder hike $ladder1 "
 			fi
 		#Snake
 			snake1=$( Snake $playerOne )
-			if(( $snake1 > 0 ))
+			if(( $snake1 >= 1 ))
 			then
+				echo "player score is $playerOne"
 				playerOne=$(( $playerOne-$snake1 ))
-				echo "--> with help of snake low $snake1 the total score and player score is $playerOne "
+				echo "--> with help of snake minus $snake1 the total score "
 			fi
 		if(( $playerOne>100 ))
 		then
@@ -119,7 +121,11 @@ playGame(){
 		else
 			echo "player score is $playerOne "
 		fi
+	#checkWinner
+		if(( $playerOne==100 ))
+		then
+			echo "Win the player One with $count time Rolls the die "
+		fi
 	done
 }
 playGame
-echo "==> $count time  player is play the game "
