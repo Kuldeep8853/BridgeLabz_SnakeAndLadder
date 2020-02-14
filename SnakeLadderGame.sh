@@ -1,5 +1,4 @@
 #!/bin/bash/
-
 Ladder(){
 	case $1 in
 	3)
