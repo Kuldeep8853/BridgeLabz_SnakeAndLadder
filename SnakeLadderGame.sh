@@ -1,4 +1,5 @@
 #!/bin/bash/
+
 playerOne=0
 count=0
 playGame(){
