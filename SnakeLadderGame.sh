@@ -121,7 +121,7 @@ playGame(){
 		else
 			echo "player score is $playerOne "
 		fi
-	#CheckWinner
+   	#CheckWinner
 		if(( $playerOne == 100 ))
 		then
 			echo "Win the player first"
