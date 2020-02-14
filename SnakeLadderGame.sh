@@ -169,3 +169,4 @@ playGame(){
 	done
 }
 playGame
+echo "$count time Rolls the die and win the game"
