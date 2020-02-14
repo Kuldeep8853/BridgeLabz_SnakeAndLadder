@@ -88,8 +88,8 @@ Snake(){
 	;;
 	esac
 }
-playerOne=0
-count=0
+	playerOne=0
+	count=0
 playGame(){
 	while(( playerOne<100 ))
 	do
