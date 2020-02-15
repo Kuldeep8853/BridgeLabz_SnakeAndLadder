@@ -138,6 +138,7 @@ playGame(){
 	do
 	if(( $playerChange==1 ))
 	then
+		read
 		play1=$(( $(( $RANDOM%6 ))+1 ))
 		count1=$(( $count1+1 ))
 		echo "$count1 time roll the die to get the $play1"
@@ -175,6 +176,7 @@ playGame(){
 	fi
 	if(( $playerChange==2 ))
 	then
+		read
 		play2=$(( $(( $RANDOM%6 ))+1 ))
 		count2=$(( $count2+1 ))
 		echo "$count2 time roll the die to get the $play2"
